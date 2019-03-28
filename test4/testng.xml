@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="testbaidu.login"/>
+      <class name="testtaobao.taobao"/>
      
     </classes>
   </test> <!-- Test -->

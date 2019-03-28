@@ -3,12 +3,12 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="testbaidu.login">
+      <class name="testtaobao.taobao">
         <methods>
           <include name="Alogin"/>
           <include name="openfirefox"/>
         </methods>
-      </class> <!-- testbaidu.login -->
+      </class> <!-- testtaobao.taobao -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

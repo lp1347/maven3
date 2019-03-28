@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10935" started-at="2019-03-28T00:42:09Z" finished-at="2019-03-28T00:42:20Z">
+  <suite name="Suite" duration-ms="50762" started-at="2019-03-28T01:17:45Z" finished-at="2019-03-28T01:18:35Z">
     <groups>
       <group name="selenium-test">
-        <method signature="login.Alogin()[pri:0, instance:testbaidu.login@1c2c22f3]" name="Alogin" class="testbaidu.login"/>
+        <method signature="taobao.Alogin()[pri:0, instance:testtaobao.taobao@282ba1e]" name="Alogin" class="testtaobao.taobao"/>
       </group> <!-- selenium-test -->
     </groups>
-    <test name="Test" duration-ms="10935" started-at="2019-03-28T00:42:09Z" finished-at="2019-03-28T00:42:20Z">
-      <class name="testbaidu.login">
-        <test-method status="PASS" signature="openfirefox()[pri:0, instance:testbaidu.login@1c2c22f3]" name="openfirefox" is-config="true" duration-ms="4926" started-at="2019-03-28T08:42:09Z" finished-at="2019-03-28T08:42:14Z">
+    <test name="Test" duration-ms="50762" started-at="2019-03-28T01:17:45Z" finished-at="2019-03-28T01:18:35Z">
+      <class name="testtaobao.taobao">
+        <test-method status="PASS" signature="openfirefox()[pri:0, instance:testtaobao.taobao@282ba1e]" name="openfirefox" is-config="true" duration-ms="5494" started-at="2019-03-28T09:17:45Z" finished-at="2019-03-28T09:17:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openfirefox -->
-        <test-method status="FAIL" signature="Alogin()[pri:0, instance:testbaidu.login@1c2c22f3]" name="Alogin" duration-ms="5999" started-at="2019-03-28T08:42:14Z" finished-at="2019-03-28T08:42:20Z">
+        <test-method status="FAIL" signature="Alogin()[pri:0, instance:testtaobao.taobao@282ba1e]" name="Alogin" duration-ms="45189" started-at="2019-03-28T09:17:50Z" finished-at="2019-03-28T09:18:35Z">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
@@ -22,7 +22,7 @@ Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'LAPTOP-222BTDR3', ip: '192.168.233.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: driver.version: RemoteWebDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=12.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ebc41c5a-b074-448d-b2f5-aef9d30c8d90]]>
+Session ID: 6bbe2c25-604c-4dd7-b605-cfadb2a4ed06]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
@@ -30,10 +30,10 @@ Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'LAPTOP-222BTDR3', ip: '192.168.233.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: driver.version: RemoteWebDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=12.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ebc41c5a-b074-448d-b2f5-aef9d30c8d90
+Session ID: 6bbe2c25-604c-4dd7-b605-cfadb2a4ed06
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at testbaidu.login.Alogin(login.java:33)
+	at testtaobao.taobao.Alogin(taobao.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -55,8 +55,9 @@ Session ID: ebc41c5a-b074-448d-b2f5-aef9d30c8d90
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.TestNG.privateMain(TestNG.java:1355)
-	at org.testng.TestNG.main(TestNG.java:1324)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
@@ -74,7 +75,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
 	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 25 more
+	... 26 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
@@ -86,14 +87,14 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.Socket.connect(Unknown Source)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 40 more
+	... 41 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alogin -->
-      </class> <!-- testbaidu.login -->
+      </class> <!-- testtaobao.taobao -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
